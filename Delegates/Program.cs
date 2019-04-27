@@ -16,7 +16,7 @@ namespace Delegates
         {
             Console.WriteLine(employee.ToString());
         }
-        private static void InitSalary(Employee employee)
+        private static void InitEmployeeSalary(Employee employee)
         {
             employee.Salary = 0;
         }
@@ -47,8 +47,8 @@ namespace Delegates
         static void Main(string[] args)
         {
             GenerateEmployees();
-            ProcessEmployees(PrintEmployee);
-            ProcessEmployees(InitSalary);
+            //ProcessEmployees(PrintEmployee);
+            ProcessEmployees(InitEmployeeSalary);
 
             ProcessEmployees(PrintEmployee);
         }
